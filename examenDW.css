@@ -1,0 +1,214 @@
+/*aqui estan mis funtes principales y tambien quito bordes inecesarios.*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(to right, #6a00ff , #0072ff);
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* aqui y a´empiezo a aplicar el diseño en si , bueno lo principal pues*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header{
+    background: linear-gradient( 90deg, #6a11cb, #2575fc);
+    padding: 20px 0;
+    box-sizing: 0 4px 6px rgba(0,0,0,0,0.1);
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: linear-gradient(to right, #0072ff);
+   padding: 20px 40px;
+   font-family: "Segoe UI", sans-serif;
+}
+
+.logo{
+   font-size: 20px;
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+}
+
+.nav-links{
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.nav-links li a {
+   list-style: none;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   font-weight: 500;
+   pad: 10px 18px;
+   border-radius: 20px;
+   transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.nav-links:hover{
+   transform: rotateY(-2px);
+}
+
+/* aqui ya son las 23.58 y voy por el hero apenas AAA preferi procrastinar*/
+.hero{
+    height: 90vh;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+
+ /* para este punto som las 00.05 ya */
+ .section{
+    padding: 80px 20px;
+ }
+
+ .text-center{
+    text-align: center;
+
+ }
+
+ .highlight{
+    color: #6d1ddc;
+ }
+
+
+ .card-aprendizaje{
+    background-color: #3c2669;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    color: #ffffff;
+    text-align: left;
+    transition: transform 0.3s ease;
+ }
+
+ .card-aprendizaje:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 18px 30px rgba(0,0,0,0,0.2);
+ }
+
+ .card-aprendizaje h3{
+    font-size: 1.8em;
+    color: #ffd6ff;
+ }
+ .card-aprendizaje p,
+ .card-aprendizaje li {
+    font-size: 1.1em;
+ }
+
+ .card-aprendizaje ul{
+    padding-left: 20px;
+ }
+
+ /*arreas donde aplicae*/
+ .areas-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+
+ }
+
+ .areas-list li{
+    list-style: none;
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #333;
+ }
+
+ /*en este punto ya me dule la mano okkk OK*/
+ /* aqui solo pongo lo de perfil y los obscuro de l a pagina*/
+ .bg-dark{
+    background-color: #2e2b47;
+    color: #fff;
+ }
+
+ .bg-dark h2{
+    color: #ffd6ff;
+ }
+
+ /*el apartado de contacto es este y solo agrego nomas tamalños la opacidad etc */
+ /*tambien mas abajo el boton de inicio pues*/
+ .contacto h2{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+ }
+
+ .btn-volver{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #6a11cb;
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+ }
+
+ .btn-volver:hover{
+    background-color: #8e2de2;
+ }
+
+ footer{
+    background-color: #1f1b2e;
+    padding: 30px 220px ;
+    color: #ccc;
+    text-align: center;
+    font-size: 0.9em;
+ }
+
+ /*aqui solo es para compu porq lo demas es responsiva para cell segun enteni el video*/
+ @media(max-width: 768px){
+    .nav-links{
+        display:flex ;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+    } 
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero h1{
+        font-size: 2.2rem;
+    }
+    .btn-hero{
+        font-size: 1em;
+    }
+ }
